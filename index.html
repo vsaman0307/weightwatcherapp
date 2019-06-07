@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Watcher App</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="form.js"></script>
+</head>
+<body>
+    <h1>Monitor your Weight using the Weightwatcher App!</h1>
+    <center> <form id="weightForm" method="post">
+                <input id="userName" type="text" placeholder="Name">
+                <input id="weight" type="text" placeholder="Weight in lbs">
+                <input id="recordDate" type="text" placeholder="recordDate in yyyy-mm-dd">
+                <button onClick="submitForm(event)">Submit</button>
+             </form></center>
+    <center><form id="progressForm" method="get">
+                <input id="user" type="text" placeholder="Name">
+                <button onClick="getProgress(event)">Get Progress</button>
+            </form></center>
+    <center><div id="chartdiv"></div></center>
+</body>
+</html>
