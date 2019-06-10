@@ -1,6 +1,6 @@
 function submitForm(e) {
   e.preventDefault()
-  var URL = "https://cjvol1xll8.execute-api.us-east-1.amazonaws.com/dev/weightwatcher"
+  var URL = "Enter API Gateway URL (staging url)"
 
   var validFormat = /^\d{4}-\d{2}-\d{2}$/
   if (!validFormat.test($("#recordDate").val())) {
